@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" href="/logo/titlelogo1.svg" type="image/icon type" />
+    <link rel="stylesheet" href="/course/courses/coursepages.css" type="text/css"/>
+    <title>HTML online compiler</title>
+  </head>
+<body>
+  <div class="container">
+    <br><br>
+    <h4 class="text-center">Type the code and see the output...</h4>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="float-left">
+              <h3 class="text-danger">
+                Code editor 
+              </h3>
+            </div>
+              <div class="float-right">
+                <div class="form-group">
+                  <input type="button" id="clear" class="btn btn-outline-info " value="Clear">
+                  <input type="button" id="run" class="btn btn-outline-primary" value="Run">
+                </div>
+              </div>
+            </div> 
+            <div class="card-body">
+              <div id="myEditor" style="min-height: 50vh;"></div>
+            </div>            
+          </div>
+        </div>
+    <div class="col-md-6 col-sm-12">
+      <div class="card" style="min-height: 68.5vh;">
+        <div class="card-header">
+          <h3 class="text-danger text-center">
+          Output screen
+          </h3>
+        </div>
+        <div class="card-body" id="output">
+        </div>
+      </div>
+    </div>
+  </div>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+  <script>
+    var e=ace.edit('myEditor');
+      e.getSession().setMode("ace/mode/html")
+      e.setTheme("ace/theme/xcode")
+      e.setValue("<!DOCTYPE html>")
+      
+
+
+$(document).ready(function(){
+  $(document).on("click","#run",function(){
+    var code=e.getValue();
+    $("#output").html(code);
+  });
+  $(document).on("click","#clear",function(){
+    e.setValue("");
+  })
+
+});
+  </script>
+</body>
+</html>

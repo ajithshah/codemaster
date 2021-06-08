@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign In</title>
+    <link rel="icon" href="/logo/titlelogo1.svg" type="image/icon type">
+    <link
+      rel="stylesheet"
+      href="fonts/material-icon/css/material-design-iconic-font.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="signup">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-form">
+                    <h2 class="form-title">Sign up</h2>
+                    <form action="/signup/signup.php" method="POST" class="register-form" id="register-form">
+                        <div class="form-group">
+                            <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="zmdi zmdi-email"></i></label>
+                            <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                            <input type="password" name="pass" id="pass" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" required/>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                            <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all
+                                statements in <a href="#" id="myBtn" class="term-service" style="text-decoration: none;">Terms and Condition</a></label>
+                                <div id="myModal" class="modal">
+                                    <div class="modal-content" class="pop">
+                                       <span class="close">&times;</span>
+                                        <p>1. paragraph of our terms and condition some text</p>
+                                        <p>2. paragraph of our terms and condition some text some text</p>
+                                    </div>
+                                   </div>
+                               </div>
+                        <div class="form-group form-button">
+                            <!-- <input type="submit" name="signup" id="signup" class="form-submit"  value="Register" /> -->
+                            <a
+                                class="form-submit"
+                                href="../course/courses.html"
+                                role="button" style="text-decoration: none;"
+                                >Register</a
+                              >
+                        </div>
+                    </form>
+                </div>
+                <div class="signup-image">
+                    <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                    <a href="./signin.html" class="signup-image-link" style="text-decoration: none;">I am already member</a>
+                </div>
+            </div>  
+        </div>
+      </div>
+    </section>
+
+</div>
+<!--style-->
+
+<style>
+.form-submit{
+    color: black;
+    font-size: small;
+ 
+  } 
+  /*  The background */
+body{
+  background-image: linear-gradient(to right, yellow ,orange);
+}
+
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(255, 255, 255); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color:whitesmoke;
+      margin: auto;
+      padding: 40px;
+      border-radius: 30px;
+      width: 80%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color:red;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+
+<!-- JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0]; 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</body>
+</html>

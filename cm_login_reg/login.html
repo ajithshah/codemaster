@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="icon" href="/cm_login_reg/titlelogo1.svg" type="image/icon type">
+	<title>Login Form</title>
+	<style>
+		img {
+  border-radius: 8px;
+}
+		body{
+			background-image: linear-gradient(to right, rgba(255, 255, 0, 0.664),  rgba(255, 166, 0, 0.664));"
+		}
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+		.login-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+
+		.login-form a:link {
+			text-decoration: none;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		.login-form p {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 12px;
+			padding: 20px 0 20px 0;
+		}
+
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		outline: none;
+		display: block;
+		width: 100%;
+		padding: 2px;
+		border: none;
+		border-bottom: 2px solid green;
+		background: transparent;
+		margin-bottom: 10px;
+		font: 16px Arial, Helvetica, sans-serif;
+		height: 45px;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+	<div class="login-form">
+		<h1>Login Form</h1>
+		<form action="login" method="POST">
+			<input type="text" name="userName" placeholder="Username" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<button class="btn btn-outline-success btn-block" type="submit">LOGIN</button>
+		</form>
+		<p><a href="registerform">Does not have an account? Register</a></p>
+		<p><a href="http://127.0.0.1:5500/">Back to home</a></p> 
+	</div>
+</body>
+</html> 

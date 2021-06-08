@@ -1,0 +1,97 @@
+<html>
+<head>
+	
+
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="icon" href="./logo/titlelogo1.svg" type="image/icon type">
+    <title>Register Form</title>
+    <style>
+		
+		body{
+			background-image: linear-gradient(to right, rgba(255, 255, 0, 0.664),  rgba(255, 166, 0, 0.664));"
+		}
+		.register-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+
+		.register-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+
+		.register-form a {
+			color:black;
+			background-color: transparent;
+			text-decoration: none;
+		}
+
+		.register-form p {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 12px;
+			padding: 20px 0 20px 0;
+		}
+
+		.register-form input[type="password"],
+		.register-form input[type="text"],
+        .register-form input[type="email"],
+        .register-form input[type="number"] {
+			box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		outline: none;
+		display: block;
+		width: 100%;
+		padding: 2px;
+		border: none;
+		border-bottom: 2px solid green;
+		background: transparent;
+		margin-bottom: 10px;
+		font: 16px Arial, Helvetica, sans-serif;
+		height: 45px;
+		}
+
+		
+	</style>
+</head>
+
+<body>
+    <div class="register-form">
+        <h1>Register Form</h1>
+        <form action="register" method="POST">
+            <input type="text" name="userName" placeholder="Name" required>
+            <input type="email" name="emailId" placeholder="Enter your mail address" required> 
+            <input type="number" name="contact" placeholder="Contact number" required>
+            <input type="text" name="location" placeholder="Location" required>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="password" name="conformpassword" placeholder="Confirm Password" id="confirm_password" required>
+            <button class="btn btn-outline-success btn-block" type="submit">SIGNUP</button>
+			<button class="btn btn-outline-success btn-block" type="reset">RESET</button>
+			<p><a href="http://127.0.0.1:5500/">Back to home</a></p>
+        </form>
+        <p>Already have an account?<a href="loginform">LOGIN</a></p>
+    </div>
+</body>
+<script>
+	var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
+</script>
+
+</html>

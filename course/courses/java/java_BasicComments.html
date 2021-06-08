@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="icon" href="/logo/titlelogo1.svg" type="image/icon type" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"/>
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="/course/courses/coursepages.css" type="text/css"/>
+    <script src="/course/courses/coursepages.js"></script>
+  <body>
+  <div class="row">
+    <div class="col-sm-12">
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container">
+        <a><img src="/logo/cmlogofull.svg" width="200px" height="40px" /></a>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/course/courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul style="background-color:goldenrod;" class="dropdown-menu"
+              aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Latest Technologies</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Action 3</a>
+              </li>
+            </ul>
+            </li>
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a
+              style="margin-left: 5px"
+              class="btn btn-outline-success"
+              href="#"
+              role="button"
+              >PROFILE</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </div>
+<!--------------------sidebar---------------->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/course/courses/java/java.html">JAVA-Home</a>
+  <a class="active" href="/course/courses/java/java_BasicComments.html">JAVA-Basic Comments</a>
+  <a href="/course/courses/java/java_Variables.html">JAVA-Variables</a>
+  <a href="/course/courses/java/java_Identifiers.html">JAVA-Identifiers</a>
+  <a href="/course/courses/java/java_Datatypes.html">JAVA-Data Types</a>
+  <a href="/course/courses/java/java_Typecasting.html">JAVA-Type Casting</a>
+  <a href="/course/courses/java/java_Operators.html">JAVA-Operators</a>
+  <a href="/course/courses/java/java_Mathfunction.html">JAVA-Math Function</a>
+  <a href="/course/courses/java/java_Boolean.html">JAVA-Boolean</a>
+  <a href="/course/courses/java/java_Ifstatement.html">JAVA-Conditions and If Statements</a>
+  <a href="/course/courses/java/java_Switch.html">JAVA-Switch Statement</a>
+  <a href="/course/courses/java/java_Loops.html">JAVA-Loops</a>
+  <a href="/course/courses/java/java_BreakCon.html">JAVA-Break and Continue</a>
+  <a href="/course/courses/java/java_Array.html">JAVA-Arrays</a>
+  <a href="/course/courses/java/java_Methods.html">JAVA-Methods</a>
+  <a href="/course/courses/java/java_ObjClass.html">JAVA-Object/Classes</a>
+  <a href="/course/courses/java/java_File.html">JAVA-Files</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<!--------------------------main content----------------------->
+<div class="container">
+      <div>
+          <h1 style="text-align: center; padding: 2%; color: black;">JAVA Basics </h1>
+      </div>
+      <div><h2>Basic Syntax</h2></div>
+      <div><p> About Java programs, it is very important to keep in mind the following points.
+     <ul>
+        <li>Case Sensitivity − Java is case sensitive, which means identifier Hello and hello would have different meaning in Java.</li>
+        <li>Class Names−For all class names the first letter should be in Upper Case.If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.
+            Example: class MyFirstJavaClass</li>
+        <li>Method Names − All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.
+             Example: public void myMethodName()</li>
+        <li>Program File Name − Name of the program file should exactly match the class name.
+            When saving the file, you should save it using the class name (Remember Java is case sensitive) and append '.java' to the end of the name (if the file name and the class name do not match, your program will not compile).
+            But please make a note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.
+            Example: Assume 'MyFirstJavaProgram' is the class name. Then the file should be saved as 'MyFirstJavaProgram.java' </li>
+        <li>Public static void main(String args[]) − Java program processing starts from the main() method which is a mandatory part of every Java program.</li>
+    </ul>
+</p>
+</div>
+<!--------------------------main content----------------------->
+<div class="container">
+    <div><h1><center>Java Comments</center></h1></div>
+    <div><h3>Single-line Comment</h3></div>
+    <div><p>Comments can be used to explain Java code, and to make it more readable. It can also be used to prevent execution when testing alternative code.</p></div>
+    <div><p>Single-line comments start with two <b>forward slashes (//)</b>.Any text between // and the end of the line is ignored by Java (will not be executed).
+      This example uses a single-line comment before and a line of code:
+      </p></div>
+      <div class='container'>
+        <div class="row">
+          <div class="col-sm-6">
+         <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+          </div>
+      <div class="col-sm-6">
+        <pre>
+          <code>
+            class Singlecomment
+              {
+               public static void main(String args[])
+                 {
+                    // Single line comment here
+                    System.out.println("Single line comment above");
+                  }
+                }
+                </code>
+          </pre>
+          </div>
+          </div>
+<!--------------------------main content---------------------------------------------------------->
+<div class="container">
+  <div><h3>Multi-line Comments</h3></div>
+  <div><p>Multi-line comments start with <b>/* </b> and ends with <b>*/ </b>
+    Any text between<b>/* </b> and <b> */ </b> will be ignored by Java.
+    This example uses a multi-line comment (a comment block) to explain the code: </p></div>
+    <div class='container'>
+      <div class="row">
+        <div class="col-sm-6">
+       <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+        </div>
+    <div class="col-sm-6">
+      <pre>
+        <code>
+          class multicomment
+          {
+              public static void main(String args[])
+              {
+                  System.out.println("Multi line comments below");
+                  /*Comment line 1
+                    Comment line 2
+                    Comment line 3*/
+              }
+          }
+              </code>
+        </pre>
+        </div>
+        </div>
+<!--------------------------main content----------------------->
+<div class="container">
+  <div><h3>Documentation Comments</h3></div>
+  <div><p>This kind of Java comments is utilized by large code for a programming bundle since it produces a documentation page for reference, which can be utilized for getting data about strategies, its parameters, and so forth.
+    </p></div>
+    <div class="row">
+      <div class="col-sm-5">
+    <div><p><h4>Syntax</h4></p></div>
+    <div>
+      <pre>
+        /**Comment start
+          *
+          *tags are used in order to specify a parameter
+          *or method or heading
+          *HTML tags can also be used
+          *such as
+          *
+          *comment ends*/
+      </pre>
+    </div>
+    </div>
+    <div class='container'>
+      <div class="row">
+        <div class="col-sm-6">
+       <div class="tryit"><a href="/course/courses/java/java_compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+        </div>
+    <div class="col-sm-6">
+      <h4>Example</h4>
+      <pre>
+        <code>
+          package JavaCommentsDemo;
+          //Program to illustrate comments in Java
+          /**
+          * Find sum of two numbers!
+          * FindSum program finds the sum
+          *and gives the output on
+          *the screen.
+          *
+          * @author  dataflair
+          */
+          public class FindSum 
+            {
+	              /**
+	              * Method to find average
+	              * @param numA- This is the first parameter to calculateSum method
+	              * @param numB - This is the second parameter to calculateSum method
+	              */
+	              int numA;
+	              int numB;
+                FindSum(int numA,int numB)
+                    {
+	                      this.numA=numA;
+	                      this.numB=numB;
+                    }
+                void calculateSum()
+                    {
+                      	System.out.println("Sum of two numbers is "+(numA+numB));
+                    }
+                static class Test
+                {
+	                public static void main(String args[])
+	                {
+		                FindSum obj=new FindSum(10,20);
+		                obj.calculateSum();
+	                }
+                }
+            }
+              </code>
+        </pre>
+        </div>
+        </div>
+        </div>
+<!---------------------------------------------------------------->
+
+<div class="footer">
+  <div class='container'>
+    <div class="row footer">
+    <div class="col-sm-2">
+      <div class="btn btn-outline-success font-monospace" role="button" ><a href="java.html"><-Previous</a></div>
+    </div>
+    <div class="col-sm-8"></div>
+    <div class="col-sm-2">
+      <div class="btn btn-outline-success font-monospace" role="button"><a href="java_Variables.html">Next-></a></div>
+    </div>
+   </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>
+  
+
+

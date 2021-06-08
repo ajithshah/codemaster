@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="icon" href="../logo/titlelogo1.svg" type="image/icon type" />
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="course.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous"
+  />
+  <body
+    style="
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 0, 0.664),
+        rgba(255, 166, 0, 0.664)
+      );
+    "
+  >
+    <nav
+      style="
+        background-image: linear-gradient(
+          to right,
+          rgba(255, 255, 0, 0.664),
+          rgba(255, 166, 0, 0.664)
+        );
+      "
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div class="container-fluid">
+        <a><img src="../logo/cmlogo1.svg" width="200px" height="40px" /></a>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../course/courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Categories
+              </a>
+              <ul style="background-color:goldenrod;" class="dropdown-menu"
+              aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Latest Technologies</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Action 3</a>
+              </li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <a
+              style="margin-left: 5px"
+              class="btn btn-outline-success"
+              href="/cm_login_reg/profile.ejs"
+              role="button"
+              >PROFILE</a
+            >
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="ctitlee">
+      <div class="ctitlee-back">
+        <div class="line-numbers">
+          <div>-></div>
+        </div>
+        <code>
+          <div class="indent">
+            <div class="indent">
+              <span class="variable"><</span>
+              <span class="string"> Learn on the web and on the go.</span
+              ><span class="variable">
+                You are browsing the best resource for Online Education</span
+              >
+              <span class="string">/></span>
+            </div>
+          </div>
+        </code>
+      </div>
+      <div class="ctitlee-front">
+        <div class="line-numbers">
+          <div>-></div>
+        </div>
+        <code
+          <span class="variable"><</span>
+          <span class="string"
+            >Select Your Course And Start Learning Now</span
+          >
+          <span class="variable">/></span></code
+        >
+      </div>
+    </div>
+    <div>
+      <div class="courses-list" style="padding-left: 5%">
+        <div class="course 1">
+          <div class="course_image">
+            <a href="/course/courses/python/python.html"
+              ><img src="./crslogo/python.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>Python</p>
+          </div>
+        </div>
+        <div class="course 2">
+          <div class="course_image">
+            <a href="/course/courses/html/html.html"
+              ><img src="./crslogo/html.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>HTML</p>
+          </div>
+        </div>
+        <div class="course 3">
+          <div class="course_image">
+            <a href="/course/courses/csharp/csharp.html"
+              ><img src="./crslogo/c-sharp.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>C#</p>
+          </div>
+        </div>
+        <div class="course 4">
+          <div class="course_image">
+            <a href="/course/courses/cpp/cpp.html"
+              ><img src="./crslogo/cplus.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>C++</p>
+          </div>
+        </div>
+        <div class="course 5">
+          <div class="course_image">
+            <a href="/course/courses/c/c.html"
+              ><img src="./crslogo/c  .png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>C</p>
+          </div>
+        </div>
+        <div class="course 6">
+          <div class="course_image">
+            <a href="/course/courses/java/java.html"
+              ><img src="./crslogo/java.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>JAVA</p>
+          </div>
+        </div>
+        <div class="course 7">
+          <div class="course_image">
+            <a href="/course/courses/css/css.html"
+              ><img src="./crslogo/css.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>CSS</p>
+          </div>
+        </div>
+        <div class="course 8">
+          <div class="course_image">
+            <a href="/course/courses/angular/angular.html"
+              ><img src="./crslogo/angular1092.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>Angular</p>
+          </div>
+        </div>
+        <div class="course 9">
+          <div class="course_image">
+            <a href="/course/courses/xml/xml.html"
+              ><img src="./crslogo/xml.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>XML</p>
+          </div>
+        </div>
+        <div class="course 10">
+          <div class="course_image">
+            <a href="/course/courses/jquery/jquery.html"
+              ><img src="./crslogo/jquery.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>jQuery</p>
+          </div>
+        </div>
+        <div class="course 11">
+          <div class="course_image">
+            <a href="/course/courses/javascript/javascript.html"
+              ><img src="./crslogo/javascript.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>JAVASCRIPT</p>
+          </div>
+        </div>
+        <div class="course 12">
+          <div class="course_image">
+            <a href="/course/courses/ml/ml.html"
+              ><img src="./crslogo/ML1094.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>ML</p>
+          </div>
+        </div>
+        <div class="course 13">
+          <div class="course_image">
+            <a href="/course/courses/php/php.html"
+              ><img src="./crslogo/php.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>PHP</p>
+          </div>
+        </div>
+        <div class="course 14">
+          <div class="course_image">
+            <a href="/course/courses/react/react.html"
+              ><img src="./crslogo/react1097.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>REACT</p>
+          </div>
+        </div>
+        <div class="course 15">
+          <div class="course_image">
+            <a href="/course/courses/sql/sql.html"
+              ><img src="./crslogo/sql.png" style="width: 200px"
+            /></a>
+          </div>
+          <div class="course_title title-white">
+            <p>SQL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

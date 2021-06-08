@@ -1,0 +1,100 @@
+body{
+    background-image: linear-gradient(to right,  rgba(255, 255, 0, 0.664) , rgba(255, 166, 0, 0.664));"
+    padding-bottom: 20%;
+} 
+ 
+/*------------------------------------main content for all course pages-----------------------------------------------*/
+/*----------------------------side bar----------------------*/
+text{
+ text-align: center;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(226, 226, 72);/*----------adithys change the color----------*/
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 19px;
+  text-align: center;
+  display: block;
+  color: black;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  font-size: 19.5px;
+  color:green;/*----------adithys change the color----------*/
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top:0;
+  right: 80px;
+  font-size: 30px;
+  margin-left: 100px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-height: 500px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.active{
+  background-image: linear-gradient(to right,  rgb(239, 243, 0) , rgb(252, 252, 252));
+}
+
+/*-------------------------------for content------------------------*/
+.heading{
+  text-align: center;
+}
+
+pre{
+  margin: 20px;
+  border: 2px solid  green;
+  border-radius: 2px;
+}
+.tryit{
+font-size:40px;
+text-align: center;
+}
+
+
+.btn:hover{
+  box-shadow: 2px 4px 4px yellowgreen;
+}
+
+/*--------------------social media logo ---------------------*/
+.social_media{
+  text-align: center;
+  font-size: 30px;
+  color: yellowgreen;
+  word-spacing: 30px;
+  padding-bottom: 40px ;
+}
+
+/*-----------------------footer--------------------*/
+a{
+  text-decoration: none;
+  color:green;
+}
+a:hover{
+  color: white;
+}
+.footer{
+  padding-bottom: 30px;
+}

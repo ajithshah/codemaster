@@ -1,0 +1,17 @@
+{
+  "name": "ajith",
+  "version": "1.0.0",
+  "description": "codemastr",
+  "main": "app.js",
+  "dependencies": {
+    "init": "^0.1.2",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

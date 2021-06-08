@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="icon" href="/logo/titlelogo1.svg" type="image/icon type" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css"/>
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="/course/courses/coursepages.css" type="text/css"/>
+    <script src="/course/courses/coursepages.js"></script>
+  <body>
+  <div class="row">
+    <div class="col-sm-12">
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container">
+        <a><img src="/logo/cmlogofull.svg" width="200px" height="40px" /></a>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/course/courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul style="background-color:goldenrod;" class="dropdown-menu"
+              aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Latest Technologies</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Action 3</a>
+              </li>
+            </ul>
+            </li>
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a
+              style="margin-left: 5px"
+              class="btn btn-outline-success"
+              href="#"
+              role="button"
+              >PROFILE</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  </div>
+<!--------------------sidebar---------------->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a  href="/course/courses/java/java.html">JAVA-Home</a>
+  <a href="/course/courses/java/java_BasicComments.html">JAVA-Basic Comments</a>
+  <a href="/course/courses/java/java_Variables.html">JAVA-Variables</a>
+  <a href="/course/courses/java/java_Identifiers.html">JAVA-Identifiers</a>
+  <a class="active" href="/course/courses/java/java_Datatypes.html">JAVA-Data Types</a>
+  <a href="/course/courses/java/java_Typecasting.html">JAVA-Type Casting</a>
+  <a href="/course/courses/java/java_Operators.html">JAVA-Operators</a>
+  <a href="/course/courses/java/java_Mathfunction.html">JAVA-Math Function</a>
+  <a href="/course/courses/java/java_Boolean.html">JAVA-Boolean</a>
+  <a href="/course/courses/java/java_Ifstatement.html">JAVA-Conditions and If Statements</a>
+  <a href="/course/courses/java/java_Switch.html">JAVA-Switch Statement</a>
+  <a href="/course/courses/java/java_Loops.html">JAVA-Loops</a>
+  <a href="/course/courses/java/java_BreakCon.html">JAVA-Break and Continue</a>
+  <a href="/course/courses/java/java_Array.html">JAVA-Arrays</a>
+  <a href="/course/courses/java/java_Methods.html">JAVA-Methods</a>
+  <a href="/course/courses/java/java_ObjClass.html">JAVA-Object/Classes</a>
+  <a href="/course/courses/java/java_File.html">JAVA-Files</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<!--------------------------main content----------------------->
+<div class="container">
+      <div>
+          <h1 style="text-align: center; padding: 2%; color: black;"> JAVA DATA TYPES </h1>
+      </div>
+      <div>
+          <table border="2">
+              <ol>
+                  <tr>
+                      <td><li>int myNum = 5;</li></td>
+                  </tr>
+                  <tr>
+                      <td><li>float myFloatNum = 5.99f;  </li></td>
+                  </tr>
+                  <tr>
+                      <td><li>char myLetter = 'D';</li></td>
+                 </tr>
+                 <tr>
+                     <td><li>boolean myBool = true;</li></td>
+                 </tr>
+                 <tr>
+                     <td><li>String myText = "Hello";</li></td>
+                 </tr>
+              </ol>
+
+      </table>
+    </div>
+    <!------------------------------------------------------------------------->
+ <div class="footer">
+  <div class='container'>
+    <div class="row footer">
+    <div class="col-sm-2">
+      <div class="btn btn-outline-success font-monospace" role="button" ><a href="java_Identifiers.html"><-Previous</a></div>
+    </div>
+    <div class="col-sm-8"></div>
+    <div class="col-sm-2">
+      <div class="btn btn-outline-success font-monospace" role="button"><a href="java_Typecasting.html">Next-></a></div>
+    </div>
+   </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>   

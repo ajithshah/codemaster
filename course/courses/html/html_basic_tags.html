@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses</title>
+    <link rel="icon" href="/logo/titlelogo1.svg" type="image/icon type" />
+  </head>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"/>
+    <link rel="stylesheet" href="/course/courses/coursepages.css" type="text/css"/>
+    <script src="/course/courses/coursepages.js"></script>
+  <body>
+  <div class="row">
+    <div class="col-sm-12">
+    <nav class="navbar navbar-expand navbar-light">
+      <div class="container-fluid">
+        <a><img src="/logo/cmlogofull.svg" width="200px" height="40px" /></a>
+        <a class="navbar-brand" href="#"></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/course/courses.html">Courses</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul style="background-color:goldenrod;" class="dropdown-menu"
+              aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Latest Technologies</a></li>
+              <li><a class="dropdown-item" href="#">Web Development</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Action 3</a>
+              </li>
+            </ul>
+            </li>
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a
+              style="margin-left: 5px"
+              class="btn btn-outline-success"
+              href="#"
+              role="button"
+              >PROFILE</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="/course/courses/html/html.html">HTML-Home</a>
+  <a href="/course/courses/html/html_overview.html">HTML-Overview</a>
+  <a class="active" href="/course/courses/html/html_basic_tags.html">HTML-Basic Tags</a>
+  <a href="/course/courses/html/html_elements.html">HTML-Elememts</a>
+  <a href="/course/courses/html/html_attributes.html">HTML-Attributes</a>
+  <a href="/course/courses/html/html_formatting.html">HTML-Formatting</a>
+  <a href="/course/courses/html/html_phrase_tags.html">HTML-Phrase Tags</a>
+  <a href="/course/courses/html/html_meta_tags.html">HTML-Meta Tags</a>
+  <a href="/course/courses/html/html_comments.html">HTML-Comments</a>
+  <a href="/course/courses/html/html_image.html">HTMl-Images</a>
+  <a href="/course/courses/html/html_tables.html">HTML-Tables</a>
+  <a href="/course/courses/html/html_list.html">HTML-List</a>
+  <a href="/course/courses/html/html_text_links.html">HTML-links</a>
+  <a href="/course/courses/html/html_text_links.html">HTML-Text Link</a>
+  <a href="/course/courses/html/html_image_links.html">HTML-Image Link</a>
+  <a href="/course/courses/html/html_email_links.html">HTML-Email Links</a>
+  <a href="/course/courses/html/html_frames.html">HTML-Frames</a>
+  <a href="/course/courses/html/html_iframes.html">HTML-Iframes</a>
+  <a href="/course/courses/html/html_blocks.html">HTML-Blocks</a>
+  <a href="/course/courses/html/html_background.html">HTML-Background</a>
+  <a href="/course/courses/html/html_color.html">HTML-Color</a>
+  <a href="/course/courses/html/html_font.html">HTML-Font</a>
+  <a href="/course/courses/html/html_forms.html">HTML-Forms</a>
+  <a href="/course/courses/html/html_emded_multimedia.html">HTML-Embed Multimedia</a>
+  <a href="/course/courses/html/html_marquees.html">HTML-Marquees</a>
+  <a href="/course/courses/html/html_header.html">HTML-Header</a>
+  <a href="/course/courses/html/html_stylesheet.html">HTML-Style Sheet</a>
+  <a href="/course/courses/html/html_javascript.html">HTML-Javascript</a>
+  <a href="/course/courses/html/html_layout.html">HTML-Layout</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+<!-----------------------------heading tag------------>
+<div class="container">
+<div><h1 class="heading">HTML basic tags</h1></div>
+<div><h1>Heading tags</h1></div>
+<div><p>Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, which use the elements &lth1&gt, &lth2&gt, &lth3&gt, &lth4&gt, &lth5&gt, and &lth6&gt. While displaying any heading, browser adds one line before and one line after that heading.</p></div>
+<div class="row">
+ <div class="col-sm-6 text-center">
+   <p><h1>This is heading 1</h1></p>
+   <p><h2>This is heading 2</h2></p>
+   <p><h3>This is heading 3</h3></p>
+   <p><h4>This is heading 4</h4></p>
+   <p><h5>This is heading 5</h5></p>
+   <p><h6>This is heading 6</h6></p>
+   <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+ <div class="col-sm-6">
+  <pre>
+    <code>
+      &lt!DOCTYPE html&gt
+      &lthtml&gt
+      &lthead&gt
+      &lttitle>Heading Example&lt/title&gt
+      &lt/head&gt
+      &ltbody&gt
+      &lth1>This is heading 1&lt/h1&gt
+      &lth2>This is heading 2&lt/h2&gt
+      &lth3>This is heading 3&lt/h3&gt
+      &lth4>This is heading 4&lt/h4&gt
+      &lth5>This is heading 5&lt/h5&gt
+      &lth6>This is heading 6&lt/h6&gt
+      &lt/body&gt
+      &lt/html&gt
+    </code>
+  </pre> 
+ </div>
+</div>
+</div>
+
+<!----------------------Paragraph tag---------------------------------->
+<div class="container">
+  <div><h1>Paragraph tags</h1></div>
+  <div><p>The tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an opening &ltp&gt and a closing &lt/p&gt tag as shown below in the example −</p></div>
+  <div class="row">
+   <div class="col-sm-6 text-center">
+     <p>Here is a first paragraph of text.</p>
+      <p>Here is a second paragraph of text.</p>
+      <p>Here is a third paragraph of text.</p>
+      <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle>Paragraph Example&lt/title&gt
+        &lt/head&gt
+       &ltbody&gt
+       &ltp>Here is a first paragraph of text.&lt/p&gt
+       &ltp>Here is a second paragraph of text.&lt/p&gt
+       &ltp>Here is a third paragraph of text.&lt/p&gt
+       &lt/body&gt
+       &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
+
+
+<!---------------------------Line Break Tag----------------------------->
+<div class="container">
+  <div><h1>Line Break Tag</h1></div>
+  <div><p>Whenever you use the &ltbr/&gt element, anything following it starts from the next line. This tag is an example of an empty element, where you do not need opening and closing tags, as there is nothing to go in between them.</p></div>
+  <div><p>The &ltbr/&gt tag has a space between the characters br and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss the forward slash character and just use &ltbr&gt it is not valid in XHTML.</p></div>
+  <div class="row">
+   <div class="col-sm-6 text-center">
+    <p>Hello<br />
+      You delivered your assignment ontime.<br />
+      Thanks<br />
+      Mahnaz</p>
+
+      <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtLine Break  Example&lt/title&gt
+        &lt/head&gt
+	      &ltbody&gt
+        &ltp>Hello&ltbr /&gt
+        You delivered your assignment ontime.&ltbr/&gt
+        Thanks&ltbr/&gt
+        Mahnaz&lt/p&gt
+        &lt/body&gt
+	      &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
+
+
+<!---------------------------Centering Content----------------------------->
+<div class="container">
+  <div><h1>Centering Content</h1></div>
+  <div><p>You can use &ltcenter&gt tag to put any content in the center of the page or any table cell.</p></div>
+  <div class="row">
+   <div class="col-sm-6 ">
+    <p>This text is not in the center.</p>
+      <center>
+         <p>This text is in the center.</p>
+      </center>
+      <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtCentring Content Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltp>This text is not in the center.&lt/p&gt
+        &ltcenter&gt
+        &ltp>This text is in the center.&lt/p&gt
+        &lt/center&gt
+        &lt/body&gt
+        &lt/html&gt
+        
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
+
+
+<!---------------------------Horizontal Lines----------------------------->
+<div class="container">
+  <div><h1>Horizontal Lines</h1></div>
+  <div><p>Horizontal lines are used to visually break-up sections of a document. The &lthr&gt tag creates a line from the current position in the document to the right margin and breaks the line accordingly.</p></div>
+  <div><p>For example, you may want to give a line between two paragraphs as in the given example below −</p></div>
+  <div class="row">
+   <div class="col-sm-6 text-center">
+    <p>This is paragraph one and should be on top</p>
+    <hr />
+    <p>This is paragraph two and should be at bottom</p>
+    <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtHorizontal Line Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltp>This is paragraph one and should be on top&lt/p&gt
+        &lthr/&gt
+        &ltp>This is paragraph two and should be at bottom&lt/p&gt
+        &lt/body&gt
+        &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+   <div><p>Again &lthr/&gt tag is an example of the empty element, where you do not need opening and closing tags, as there is nothing to go in between them</p></div>
+   <div><p>The &lthr/&gt element has a space between the characters hr and the forward slash. If you omit this space, older browsers will have trouble rendering the horizontal line, while if you miss the forward slash character and just use &lthr&gt it is not valid in XHTML</p></div>  
+  </div>
+  </div>
+
+
+<!---------------------------Preserve Formatting----------------------------->
+<div class="container">
+  <div><h1>Preserve Formatting</h1></div>
+  <div><p>Sometimes, you want your text to follow the exact format of how it is written in the HTML document. In these cases, you can use the preformatted tag &ltpre&gt</p></div>
+  <div><p>Any text between the opening &ltpre&gt tag and the closing &lt/pre&gt tag will preserve the formatting of the source document.</p></div>
+  <div class="row">
+   <div class="col-sm-6 ">
+    <pre>
+      function testFunction( strText ){
+         alert (strText)
+      }
+   </pre>
+
+   <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtPreserve Formatting Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltpre&gt
+        function testFunction( strText ){
+           alert (strText)
+        }
+        &lt/pre&gt
+        &lt/body&gt
+        &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
+
+
+
+  <!---------------------------Nonbreaking Spaces----------------------------->
+<div class="container">
+  <div><h1>Nonbreaking Spaces</h1></div>
+  <div><p>Suppose you want to use the phrase "12 Angry Men." Here, you would not want a browser to split the "12, Angry" and "Men" across two lines −</p></div>
+  <div><p>In cases, where you do not want the client browser to break text, you should use a nonbreaking space entity &nbsp; instead of a normal space. For example, when coding the "12 Angry Men" in a paragraph, you should use something similar to the following code −</p></div>
+
+  <div class="row">
+   <div class="col-sm-6 ">
+    <p>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."</p>
+    <div class="tryit"><a href="/course/courses/html/compiler.html" target="_blank"><div class="btn btn-outline-success">Try it</div></a></div>
+  </div>
+   <div class="col-sm-6">
+    <pre>
+      <code>
+        &lt!DOCTYPE html&gt
+        &lthtml&gt
+        &lthead&gt
+        &lttitle&gtNonbreaking Spaces Example&lt/title&gt
+        &lt/head&gt
+        &ltbody&gt
+        &ltp>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."&lt/p&gt <!----dude have a look at thzz...--->
+        &lt/body&gt
+        &lt/html&gt
+      </code>
+    </pre> 
+   </div>
+  </div>
+  </div>
+
+
+
+<!---------------------------------------->
+<div class="footer">
+  <div class='container'>
+    <div class="row footer">
+    <div class="col-sm-2">
+      <div class="btn btn-outline-success font-monospace" role="button" ><a href="/course/courses/html/html_overview.html"><-Previous</a></div>
+    </div>
+    <div class="col-sm-8"></div>
+    <div class="col-sm-2">
+      <div class="btn btn-outline-success font-monospace" role="button" ><a href="/course/courses/html/html_elements.html">Next-></a></div>
+    </div>
+   </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
